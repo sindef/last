@@ -23,10 +23,6 @@ func main() {
 		fmt.Println("No file specified")
 		os.Exit(1)
 	}
-	if *off < 0 {
-		fmt.Println("Offset must be greater than or equal to 0")
-		os.Exit(1)
-	}
 	tailOffset(*f, *n, *off)
 
 }
